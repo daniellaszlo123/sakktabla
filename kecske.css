@@ -1,0 +1,71 @@
+@charset "utf-8";
+ *{box-sizing: border-box;}
+
+
+ header h1{
+    text-align: center;
+ }
+ header p{
+    size: 20px;
+    text-align: center;
+ }
+
+main,header,aside,article,footer{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+main{
+    max-width: 900px;
+    display: grid;
+    grid-template-areas: "h h h"
+                         "b a j"
+                         "f f f";
+}
+
+header{
+    grid-area: h;
+}
+
+header h1{
+    text-align: center;
+}
+
+header p{
+    text-align: justify;
+}
+
+#bal{
+    grid-area: b;
+}
+
+#bal img{
+    width: 40%;
+}
+
+#jobb{
+    grid-area: j;
+}
+
+article{
+    grid-area: a;
+    background-color: lightblue;
+    background-image: url(kepek/csonak.png);
+    background-repeat: no-repeat;
+}
+article img{
+    width: 40%;
+}
+footer{
+    padding: 0;
+    grid-area: f;
+}
+
+footer p{
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
+    height: 50%;
+    margin-bottom: 5px;
+    text-align: center;
+}
